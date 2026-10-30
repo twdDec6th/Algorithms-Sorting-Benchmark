@@ -1,8 +1,8 @@
 
-##Student Information
-##Name:هبة خالد قدح
-##UniversityID:3168038
-##Group:A
+## بيانات الطالب
+- **الاسم:** هبة خالد قدح
+- **الرقم الجامعي:** 3168038
+- **الشعبة:** A
 ## Results Table (Execution Time in microseconds)
 | Algorithm | Random | Reverse | Fully Sorted | Partially Sorted |
 |-----------|--------|---------|--------------|------------------|
@@ -13,25 +13,32 @@
 | Quick Sort | 16326 | 14635 | 10032 | 7182 |
 #Comparative Chart Illustrating Performance Across Different Cases.
 <img width="3730" height="1923" alt="chart" src="https://github.com/user-attachments/assets/05b6c9da-e4ee-4ad4-b6c8-4c053a056391" />
-## Comparison of the Performance Difference Between O(N²) and O(N log N) Algorithms
+## مقارنة الفرق في الأداء بين خوارزميات O(N²) و O(N log N)
 
-### 1. O(N²) Algorithms
-These include: Selection Sort, Insertion Sort, Bubble Sort.
+### 1. خوارزميات O(N²)
+تشمل هذه الخوارزميات:
+- Selection Sort (الترتيب بالاختيار).
+- Insertion Sort (الترتيب بالإدراج).
+- Bubble Sort (الترتيب بالفقاعات).
 
-Their execution time increases significantly as the number of elements grows, because the number of operations increases approximately with the square of the input size.
+يزداد زمن تنفيذ هذه الخوارزميات بشكل ملحوظ عند زيادة عدد العناصر، وذلك لأن عدد العمليات يزداد تقريباً بمقدار مربع حجم البيانات المدخلة.
 
-### 2. O(N log N) Algorithms
-These include: Merge Sort, Quick Sort (on average).
+### 2. خوارزميات O(N log N)
+تشمل هذه الخوارزميات:
+- Merge Sort (الترتيب بالدمج).
+- Quick Sort (الترتيب السريع) في المتوسط.
 
-They generally provide faster performance when dealing with large amounts of data, because their number of operations grows more slowly than O(N²).
+توفر هذه الخوارزميات أداءً أسرع بشكل عام عند التعامل مع كميات كبيرة من البيانات، لأن عدد العمليات فيها ينمو بمعدل أبطأ مقارنة بخوارزميات O(N²).
 
-## Identifying the Best Algorithm for Fully Sorted and Partially Sorted Data, with Justification
+## تحديد أفضل خوارزمية للبيانات المرتبة بالكامل والمرتبة جزئياً مع التبرير
 
-- **Fully Sorted:** Insertion Sort is the best because it takes advantage of the fact that the data is already sorted.
-- **Partially Sorted:** Quick Sort is the best based on the experimental results, because it achieved the lowest execution time.
+- **البيانات المرتبة بالكامل (Fully Sorted):** تعتبر خوارزمية Insertion Sort الأفضل؛ لأنها تستفيد من كون البيانات مرتبة مسبقاً، مما يقلل عدد العمليات وزمن التنفيذ.
+- **البيانات المرتبة جزئياً (Partially Sorted):** تعتبر خوارزمية Quick Sort الأفضل وفقاً للنتائج التجريبية؛ لأنها حققت أقل زمن تنفيذ.
 
-## Explaining the Behavior of Quick Sort with Reverse-Sorted and Fully Sorted Data, and the Effect of the Pivot Element
+## شرح سلوك خوارزمية Quick Sort مع البيانات المرتبة عكسياً والمرتبة بالكامل، وتأثير عنصر Pivot
 
-Quick Sort performs efficiently with both reverse-sorted and fully sorted data when using a Random Pivot.
+تعمل خوارزمية Quick Sort بكفاءة مع البيانات المرتبة عكسياً والبيانات المرتبة بالكامل عند استخدام عنصر Pivot عشوائي (Random Pivot).
 
-The Pivot divides the data into two parts. A good Pivot creates balanced partitions, resulting in faster execution, while a poor Pivot creates unbalanced partitions and increases execution time. Using a Random Pivot helps reduce the chance of poor performance.
+يقوم عنصر Pivot بتقسيم البيانات إلى جزأين. اختيار Pivot مناسب يؤدي إلى تقسيم متوازن، مما يساهم في تسريع عملية الترتيب. أما اختيار Pivot غير مناسب فيؤدي إلى تقسيم غير متوازن، وبالتالي زيادة زمن التنفيذ.
+
+يساعد استخدام Pivot عشوائي على تقليل احتمالية حدوث أداء سيئ للخوارزمية.
