@@ -10,3 +10,4 @@
 | Bubble Sort | 21823153 | 8120407 | 4768501 | 7658591 |
 | Merge Sort | 23337 | 9301 | 9002 | 16821 |
 | Quick Sort | 16326 | 14635 | 10032 | 7182 |
+#Comparative Chart Illustrating Performance Across Different Cases.
