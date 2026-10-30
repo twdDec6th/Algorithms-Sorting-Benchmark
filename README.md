@@ -11,6 +11,7 @@
 | Bubble Sort | 21823153 | 8120407 | 4768501 | 7658591 |
 | Merge Sort | 23337 | 9301 | 9002 | 16821 |
 | Quick Sort | 16326 | 14635 | 10032 | 7182 |
+
 #Comparative Chart Illustrating Performance Across Different Cases.
 <img width="3730" height="1923" alt="chart" src="https://github.com/user-attachments/assets/05b6c9da-e4ee-4ad4-b6c8-4c053a056391" />
 ## مقارنة الفرق في الأداء بين خوارزميات O(N²) و O(N log N)
